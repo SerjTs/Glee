@@ -7,6 +7,9 @@ $(function() {
     fade: true
   });
 
+  var mixer = mixitup('.products__items');
+  var mixer2 = mixitup('.category');
+
   $('[data-fancybox]').fancybox({
     youtube: {
       controls: 0,

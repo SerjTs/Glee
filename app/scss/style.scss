@@ -342,6 +342,10 @@
     font-size: 16px;
     color: #8b8b8b;
     line-height: 1.2;
+    border: none;
+    background-color: transparent;
+    transition: all .3s;
+    cursor: pointer;
   }
   &__list-link--active,
   &__list-link:hover {
@@ -506,6 +510,10 @@
     font-size: 16px;
     color: #8b8b8b;
     line-height: 1.2;
+    border: none;
+    background-color: transparent;
+    transition: all .3s;
+    cursor: pointer;
   }
   &__list-link--active,
   &__list-link:hover {
