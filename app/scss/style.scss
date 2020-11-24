@@ -527,10 +527,35 @@
     text-align: left;
     margin-left: 37px;
   }
-
 }
 
-
+.video {
+  min-height: 501px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__play-btn-box, 
+  &__play-btn-circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__play-btn-box {
+    width: 127px;
+    height: 127px;
+    background-color: rgba(163, 187, 200, 0.4);
+  }
+  &__play-btn-circle {
+    width: 98px;
+    height: 98px;
+    background-color: rgb(163, 187, 200);
+  }
+}
 
 
 
