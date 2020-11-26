@@ -63,3 +63,14 @@
       url('../fonts/Rubik-Medium.ttf') format('truetype');
   font-display: swap;
 }
+
+@font-face {
+      font-family: 'fontello';
+      src: url('../fonts/fontello.eot?48215135');
+      src: url('../fonts/fontello.eot?48215135#iefix') format('embedded-opentype'),
+           url('../fonts/fontello.woff?48215135') format('woff'),
+           url('../fonts/fontello.ttf?48215135') format('truetype'),
+           url('../fonts/fontello.svg?48215135#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
