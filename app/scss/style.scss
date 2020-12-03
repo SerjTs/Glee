@@ -1308,6 +1308,78 @@
 }
 
 
+.productslist2 {
+  &__items {
+    display: block;
+  }
+  &__item {
+    display: flex;
+    box-shadow: none;
+  }
+  &__item-link-box {
+    display: none;
+  }
+  &__item-img-box {
+    height: 338px;
+    width: 323px;
+    background-color: #fefefe;
+    border: 2px solid #f2f2f2;
+  }
+  &__item-img {
+    width: 100%;
+  }
+  &__content {
+    margin-left: 80px;
+  }
+  &__item-title {
+    @extend %Rubik-400;
+    font-size: 40px;
+    color: #333333;
+    line-height: 0.661;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  &__star {
+    margin-bottom: 20px;
+  }
+  &__item-price {
+    display: none;
+  }
+  &__item-price-new {
+    @extend %Rubik-400;
+    font-size: 30px;
+    color: rgb(51, 51, 51);
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  &__item-text {
+    font-size: 16px;
+    @extend %Rubik-400;
+    color: #243f4d;
+    line-height: 1.875;
+    left: 1105.187px;
+    max-width: 406px;
+    margin-bottom: 40px;
+  }
+  &__item-link-box2 {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+  }
+  &__item-link {
+    transform: translateY(0);
+    border-radius: 0;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    &:hover {
+    background-color: rgb(163, 187, 200);
+     }
+  }
+}
+
+
+
 
 
 
