@@ -1,7 +1,10 @@
 $(function() {
 
+
+  $('.product-page__input').styler();
+
+
   $(".star").rateYo({
-    
   });
 
   $(".js-range-slider").ionRangeSlider({
@@ -20,6 +23,23 @@ $(function() {
     arrows: false,
     dots: true,
     fade: true
+  });
+
+  $('.product-slide__thumb').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.product-slide__big',
+    // centerMode: true,
+    dots: false,
+    focusOnSelect: true,
+    vertical: true
+  });
+  $('.product-slide__big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.product-slide__thumb'
   });
 
   var mixer = mixitup('.products__items');
