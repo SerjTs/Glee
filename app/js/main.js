@@ -1,8 +1,16 @@
 $(function() {
 
 
-  $('.product-page__input').styler();
+  $('.product-tabs__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.product-tabs__top-item--active').removeClass('product-tabs__top-item--active');
+    $(this).addClass('product-tabs__top-item--active');
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+    $($(this).attr('href')).addClass('product-tabs__content-item--active');
+  })
 
+
+  $('.product-page__input').styler();
 
   $(".star").rateYo({
   });
@@ -40,6 +48,13 @@ $(function() {
     arrows: false,
     fade: true,
     asNavFor: '.product-slide__thumb'
+  });
+  $('.product-related__content').slick({
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slick-next" type="button"></>',
+    nextArrow: '<button class="slick-prev" type="button"></>',
   });
 
   var mixer = mixitup('.products__items');
