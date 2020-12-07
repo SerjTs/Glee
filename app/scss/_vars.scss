@@ -41,6 +41,23 @@ $about: #243f4d;
   font-weight: 700;
 }
 
+%link-arrow-btn {
+  display: inline-block;
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 64px;
+  color: #436372;
+  padding: 0 60px 0 25px;
+  min-width: 184px;
+  background-color: transparent;
+  border: 1px solid rgba(67, 99, 114, 0.4);
+  border-radius: 5px;
+  margin-right: auto;
+  position: relative;
+  transition: all .3s;
+}
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }

@@ -465,18 +465,7 @@
     margin: -95px 0 85px;
   }
   &__link {
-    @extend %Rubik-500;
-    font-size: 15px;
-    line-height: 64px;
-    color: #436372;
-    padding: 0 60px 0 25px;
-    min-width: 184px;
-    background-color: transparent;
-    border: 1px solid rgba(67, 99, 114, 0.4);
-    border-radius: 5px;
-    margin-right: auto;
-    position: relative;
-    transition: all .3s;
+    @extend %link-arrow-btn;
   }
   &__link:hover {
     border: 1px solid rgba(67, 99, 114, 1);
@@ -1603,6 +1592,132 @@
   }
   & .products__item {
     width: 270px;
+  }
+}
+
+.blog-page {
+  padding: 120px 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    max-width: 830px;
+    margin-right: 70px;
+  }  
+  &__content-item {
+    margin-bottom: 50px;
+  }
+  &__content-img {
+    width: 830px;
+    object-fit: cover;
+  }
+  &__content-info {
+    display: inline-flex;
+    justify-content: center;
+    padding: 28px 30px 28px 22px;
+    @extend %Rubik-400;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    height: 71px;
+    transform: translateY(-71px);
+    background-color: #a3bbc8;
+  }
+  & .blog__icon {
+    margin-right: 5px;
+  }
+  &__content-date {
+    margin-right: 22px;
+  }
+  &__content-author {
+    @extend %Rubik-400;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__content-title {
+    @extend %Rubik-400;
+    font-size: 36px;
+    color: #333333;
+    line-height: 0.734;
+    text-align: left;
+    margin-top: -20px;
+    margin-bottom: 22px;
+  }
+  &__content-text {
+    margin-bottom: 28px;
+  }
+  &__content-btn {
+    @extend %link-arrow-btn;
+    color: #a3bbc8;
+    & svg {
+      path {
+        fill: #a3bbc8;
+      }
+    }
+  }
+  & .pagination {
+    justify-content: start;
+    margin: 75px 0 0 -8px;
+  }
+  &__search-form {
+    position: relative;
+    margin-bottom: 60px;
+  }
+  &__search-input {
+    border: 1px solid #eef2f5;
+    border-radius: 5px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #243f4d;
+    @extend %Rubik-400;
+    padding: 0 64px 0 14px;
+    width: 100%;
+  }
+  &__search-btn {
+    border-radius: 5px;
+    background-color: #edf1f4;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.recent-posts {
+  &__item {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__img-link {
+    display: block;
+    min-width: 71px;
+    margin-right: 20px;
+    & img {
+      width: 71px;
+      height: 71px;
+      object-fit: cover;
+    }
+  }  
+  &__subtitle {
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  &__date {
+    @extend %Rubik-400;
+    font-size: 12px;
+    color: #d7d7d7;
+    text-transform: uppercase;
   }
 }
 
