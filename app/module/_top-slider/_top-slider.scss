@@ -1,0 +1,78 @@
+.top-slider {
+  &__inner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 180px 45px 300px;
+    background-color: #fcd7b6;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    padding-top: 120px;
+  }
+  &__title {
+    @extend %Rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    margin-bottom: 40px;
+  }
+  &__text {
+    max-width: 385px;
+    @extend %Rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    margin-bottom: 40px;
+  }
+  &__link {
+    @extend %Rubik-500;
+    font-size: 15px;
+    line-height: 60px;
+    color: #ffffff;
+    padding: 0 60px 0 25px;
+    min-width: 200px;
+    background-color: #a3bbc8;
+    display: inline-block;
+    position: relative;
+    transition: all .3s;
+  }
+  &__link:hover {
+    background-color: #a5c7da;
+  }
+  &__link:active {
+    background-color: #92abb9;
+  }
+  &__link-arrow {
+    position: absolute;
+    right: 20px;
+  }
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  & button {
+    @extend %Rubik-500;
+    font-size: 11px;
+    line-height: 30px;
+    color: #243f4d;
+    width: 30px;
+    height: 30px;
+    background-color: #fde3cc;
+    border: none;
+    border-radius: 50%;
+    margin: 0 6px;
+  }
+  & button:hover {
+    background-color: #fff;
+    color: #243f4d;
+  }
+}
+.slick-active {
+  & button {
+    background-color: #fff;
+    color: #243f4d;
+  }
+}

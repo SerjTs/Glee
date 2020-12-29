@@ -1,0 +1,110 @@
+.footer-top {
+  padding: 80px 0 78px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  &__contact {
+    width: 200px;
+    margin-right: 98px;
+  }
+  &__nav {
+    width: 125px;
+    margin-right: 175px;
+  }
+  &__logo {
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+  &__title {
+    margin-bottom: 18px;
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #1f2044;
+    text-transform: uppercase;
+  }
+  &__item-newsletter {
+    max-width: 275px;
+  }
+  &__address,
+  &__phone,
+  &__email,
+  &__link,
+  &__text {
+    display: block;
+    @extend %Rubik-400;
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  &__form {
+    display: flex;
+    padding-top: 25px;
+  }
+  &__form-input {
+    width: 170px;
+    height: 38px;
+    padding: 15px;
+    background-color: #fcd7b6;
+    border: none;
+    &::placeholder {
+      @extend %DMSans-400;
+      font-size: 12px;
+      line-height: 38px;
+      color: #234969;
+    }
+  }
+  &__form-btn {
+    background-color: #a3bbc8;
+    width: 100px;
+    height: 38px;
+    @extend %DMSans-400;
+    font-size: 14px;
+    line-height: 38px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  &__form-btn:hover {
+    background-color: #a5c7da;
+  } 
+  &__form-btn:active {
+    background-color: #92abb9;
+  } 
+}
+
+.footer-bottom {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__copyright {
+    font-size: 14px;
+    @extend %Rubik-400;
+    line-height: 32px;
+    color: #7b7b7b;
+  }
+  &__menu-list {
+    display: flex;
+  }
+  &__menu-item {
+    padding: 0 15px;
+    border-right: 2px solid #7b7b7b;
+    cursor: pointer;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+  &__menu-link {
+    @extend %Rubik-400;
+    color: #7b7b7b;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+

@@ -1,0 +1,86 @@
+
+.login {
+  padding: 100px 0 120px;
+  &__form {
+    margin: 0 auto;
+    max-width: 470px;
+  }
+  &__form-label,
+  &__form-input,
+  &__text,
+  &__link-pass {
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: #436372;
+    line-height: 23px;
+  }
+  &__form-input {
+    margin: 10px 0 30px;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    height: 56px;
+    padding: 10px;
+    line-height: 56px;
+  }
+  &__form-btn {
+    margin-bottom: 30px;
+    @extend %Rubik-500;
+    font-size: 18px;
+    line-height: 60px;  
+    color: #fffefe;
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    border: none;
+    background-color: #a3bbc8;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+    background-color: #a5c7da;
+    }
+    &:active {
+    background-color: #92abb9;
+    }
+  }  
+  &__form-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f6f6f6;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  &__link-pass {
+    transition: all 0.3s;
+    &:hover {
+      color: #243f4d;
+    }
+  }
+  &__text {
+    text-align: center;
+  }
+  &__link-reg {
+    display: inline-block;
+    @extend %Rubik-500;
+    font-size: 18px;
+    line-height: 52px;
+    color: #243f4d;
+    text-align: center;
+    width: 100%;
+    height: 56px;
+    border: 2px solid #a3bbc8;
+    margin-top: 30px;
+    transition: all .3s;
+    &:hover {
+    background-color: #edf1f4;
+    }
+    &:active {
+    background-color: #cedbe4;
+    }
+  }
+}
+
+.partners {
+  margin-top: 0;
+  padding-top: 0;
+}

@@ -1,0 +1,43 @@
+.top {
+  background-color: #edf1f4;
+  padding: 40px 0 33px;
+  &__title {
+    @extend %Rubik-300;
+    font-size: 36px;
+    color: #222933;
+    line-height: 0.667;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+.breadcrumbs {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    padding: 0 10px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '/';
+      @extend %Rubik-400;
+      font-size: 14px;
+      color: rgba(34, 41, 51, 0.6);
+      top: 4px;
+      right: -4px;
+    }
+    &:last-child::before {
+      display: none;
+    }
+  }
+  &__link {
+    @extend %Rubik-400;
+    font-size: 14px;
+    color: rgba(34, 41, 51, 0.6);
+    line-height: 1.714;
+    text-align: center;
+  }
+}
