@@ -1,5 +1,9 @@
 $(function() {
 
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active')
+  });
+
 
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
@@ -7,7 +11,7 @@ $(function() {
     $(this).addClass('product-tabs__top-item--active');
     $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
-  })
+  });
 
 
   $('.product-page__input').styler();
