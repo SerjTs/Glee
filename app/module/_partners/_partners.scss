@@ -11,3 +11,17 @@
   }
 }
   
+
+@media (max-width: 820px) {
+  .partners {
+    margin-top: 50px;
+    padding-top: 10px;
+    &__list {
+      flex-wrap: wrap;
+      height: auto;
+    }
+    &__item {
+      margin: 20px 30px;
+    }
+  }
+}

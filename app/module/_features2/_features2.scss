@@ -55,3 +55,32 @@
     right: 20px;
   }
 }
+
+
+@media (max-width: 1570px) {
+  .features2 {
+    &__items {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+      max-width: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    &__item + .features2__item{
+      margin-top: 170px;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .features2 {
+    &__item {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 50px;
+    }
+  }  
+}
