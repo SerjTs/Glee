@@ -84,3 +84,11 @@
   margin-top: 0;
   padding-top: 0;
 }
+
+@media (max-width: 400px) {
+  .login {
+    .wrapper {
+      padding: 0 8px;
+    }
+  }
+}
