@@ -142,4 +142,10 @@
       margin-top: 35px;
     }
   }
+  .footer-bottom {
+    flex-direction: column;
+    &__copyright {
+      margin-bottom: 15px;
+    }
+  }
 }
