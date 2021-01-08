@@ -44,14 +44,22 @@ $(function() {
     // centerMode: true,
     dots: false,
     focusOnSelect: true,
-    vertical: true
+    vertical: true,
   });
   $('.product-slide__big').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.product-slide__thumb'
+    asNavFor: '.product-slide__thumb',
+    responsive: [
+      {
+        breakpoint: 601,
+        settings: {
+          draggable: true,
+        }
+      },
+    ]
   });
   $('.product-related__content').slick({
     infinite: false,
@@ -59,6 +67,27 @@ $(function() {
     slidesToScroll: 1,
     prevArrow: '<button class="slick-next" type="button"></>',
     nextArrow: '<button class="slick-prev" type="button"></>',
+    responsive: [
+      {
+        breakpoint: 1001,
+        settings: {
+          slidesToShow: 3,
+          draggable: true,
+        }
+      },
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 451,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 
   var mixer = mixitup('.products__items');

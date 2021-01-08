@@ -91,3 +91,18 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .category {
+    &__list {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    &__list-item {
+      +.category__list-item {
+        margin-left: 0;
+        margin-top: 5px;
+      }
+    }
+  }
+}

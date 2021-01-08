@@ -761,7 +761,7 @@
   & button {
     position: absolute;
     top: -110px;
-    right: 0;
+    right: 66px;
     background-color: #ffffff;
     border-width: 2px;
     border-color: rgb(163, 187, 200);
@@ -774,7 +774,7 @@
     background-position: center;
   }
   & .slick-prev {
-    right: -66px;
+    right: 0;
     background-image: url('../images/icons/shape-right.svg');
   }
   & .slick-disabled {
