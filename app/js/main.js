@@ -1,9 +1,18 @@
 $(function() {
 
+  // $('.shop__filters-btn').on('click', function () {
+  //   $('.shop .shop__filters').toggleClass('shop__filters--visible')
+  // });
+
+  $('.shop__filters-btn').on('click', function () {
+    $('.shop .shop__filters').slideToggle();
+  });
+
   $('.menu__btn').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active')
   });
 
+  
 
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
